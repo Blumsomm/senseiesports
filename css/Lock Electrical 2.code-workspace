@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Lock Electrical 2",
+			"path": "../../Lock Electrical 2"
+		},
+		{
+			"name": "Sensei Esports",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Sensei Esports"
+	}
+}
