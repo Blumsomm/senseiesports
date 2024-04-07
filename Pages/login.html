@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensei Esports - Login / Register</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/login.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/10cd935eb8.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
+  <!-- Remix icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Swiper.js styles -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+<main>
+
+  <section>
+    <div class="return-home"><a href="../Pages/index.html"><i class="fa-solid fa-arrow-left"></i>Return Home</a></div>
+    <div class="wrapper">
+      <span class="bg-animate"></span>
+      <span class="bg-animate2"></span>
+      
+      <div class="form-box login">
+        <h2 class="animation" style="--i:0; --j:21;">Login</h2>
+        <form action="#">
+          <div class="input-box animation" style="--i:1; --j:22;">
+            <input type="text" required>
+            <label>Username</label>
+            <i class='bx bxs-user' ></i>
+          </div>
+
+          <div class="input-box animation" style="--i:2; --j:23;">
+            <input type="password" required>
+            <label>Password</label>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+
+          <button type="submit" class="btn animation" style="--i:3; --j:24;">Login</button>
+          <div class="logreg-link animation" style="--i:4; --j:25;"><p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="info-text login">
+        <h2 class="animation" style="--i:0; --j:20;">Welcome Back!</h2>
+        <p class="animation" style="--i:1; --j:21;">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      </div>
+
+      <div class="form-box register">
+        <h2 class="animation" style="--i:17; --j:0;">Sign Up</h2>
+        <form action="#">
+          <div class="input-box animation" style="--i:18; --j:1;">
+            <input type="text" required>
+            <label>Username</label>
+            <i class='bx bxs-user' ></i>
+          </div>
+          <div class="input-box animation" style="--i:19; --j:2;">
+            <input type="text" required>
+            <label>Email</label>
+            <i class='bx bxs-envelope' ></i>
+          </div>
+
+          <div class="input-box animation" style="--i:20; --j:3;">
+            <input type="password" required>
+            <label>Password</label>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+
+          <button type="submit" class="btn animation" style="--i:21; --j:4;">Sign Up</button>
+          <div class="logreg-link animation" style="--i:22; --j:5;"><p>Already have an account? <a href="#" class="login-link">Login</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="info-text register">
+        <h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
+        <p class="animation" style="--i:18; --j:1;">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- partial -->
+
+
+<!-- Swiper.js -->
+<script src="../Javascript/swiper-bundle.min.js"></script>
+<!-- Custom Script -->
+<script>
+  const wrapper = document.querySelector('.wrapper');
+const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.login-link');
+
+registerLink.onclick = () => {
+  wrapper.classList.add('active');
+}
+
+loginLink.onclick = () => {
+  wrapper.classList.remove('active');
+}
+</script>
+</body>
+</html>
