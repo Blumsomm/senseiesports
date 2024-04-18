@@ -1,0 +1,118 @@
+/* === Google Fonts === */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Custom Properties */
+:root{
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #373252;
+    --secondary-background-color: #151120;
+    --hover-purple-color: #5c428c;
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+    --num-cols: 4;
+    --row-height: 20rem;
+}
+
+
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--light-color-alt);
+  background-color: var(--primary-background-color);
+  letter-spacing: 1px;
+  transition: background-color .25s,color .25s;
+  overflow: auto;
+}
+
+#sponsors .container {
+  padding: 7.5rem 0;
+}
+
+.sponsor-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0 2.5rem 0;
+  margin: 0 10rem;
+  gap: var(--gap);
+  color: var(--light-color)
+}
+
+.sponsor-title h1 {
+  letter-spacing: 0.25rem;
+  font-size: var(--font-size-xl);
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  border-bottom: var(--secondary-background-color) 1.5px solid;
+  color: var(--light-color);
+}
+
+.sponsor-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 60rem;
+  padding: 10px;
+}
+
+.sponsor-logo img {
+  height: 7.5rem;
+  width: 40rem;
+}
+
+.sponsor4 {
+  border-bottom: none;
+}
+
+.sponsor-link {
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.sponsor-link a {
+  text-transform: lowercase;
+  text-decoration: underline;
+  font-size: var(--font-size-xs);
+}
