@@ -86,6 +86,12 @@ body{
   gap: 15rem;
   border-bottom: var(--secondary-background-color) 1.5px solid;
   color: var(--light-color);
+  padding: 3rem;
+}
+
+#sponsors .container .sponsor:hover {
+  background: var(--transparent-dark-color);
+  width: 100%;
 }
 
 .sponsor-logo {
@@ -94,7 +100,6 @@ body{
   align-items: center;
   height: 25rem;
   width: 60rem;
-  padding: 10px;
 }
 
 .sponsor-logo img {

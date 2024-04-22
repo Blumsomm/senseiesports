@@ -105,7 +105,7 @@ i{
 /* Esports Team Entry Page */
 
 .esports-teams-page {
-  padding: 7.5rem 0;
+  padding: 15rem 0;
 }
 
 .overall-achievements {
@@ -401,6 +401,10 @@ i{
 }
 
 @media (max-width: 768px) {
+  .esports-teams-page {
+    padding: 7.5rem 0;
+  }
+
   .overall-achievements {
     justify-content: space-evenly;
     gap: 5rem;

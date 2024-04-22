@@ -359,3 +359,36 @@ html{
   transform: rotate(-11deg) skewY(-41deg);
   transition-delay: 1.2s;
 }
+
+@media (max-width: 425px) {
+  h2.animation,
+  .info-text.login,
+  .info-text.register,
+  .bg-animate,
+  .bg-animate2 {
+    display: none;
+  }
+
+  .wrapper {
+    width: 38rem;
+    height: 40rem;
+    text-align: center;
+  }
+
+  .form-box.login,
+  .form-box.register {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 36rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    width: 30rem;
+  }
+}

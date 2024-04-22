@@ -356,38 +356,6 @@ i.user-icon-small-screens {
   font-size: var(--font-size-sm);
 }
 
-/* ===== Sponsorship Banner =====
-
-.sponsorships {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.281);
-  height: 7.5rem;
-  align-items: center;
-}
-
-.swiper1 {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide:hover {
-  color: var(--light-color);
-  cursor: pointer;
-  transition: 150ms;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: var(--font-size-sm);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-} */
-
-
 /* ===== Headline News ===== */
 
 .headline {
@@ -769,10 +737,76 @@ i.user-icon-small-screens {
   transform: scale(1.05);
 }
 
+/* Contact Us */
+
+#contact-page{
+  padding-bottom: 5rem;
+}
+
+.contact-title {
+  font-size: var(--font-size-lg);
+  text-align: left;
+  padding: 5rem 0 5rem 0;
+  color: var(--light-color);
+}
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  border-radius: 1rem;
+  gap: var(--gap);
+}
+
+.contact { 
+  font-size: 13px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 1px;
+  width: 38rem;
+  
+}
+
+.contact img {
+  height: 20rem;
+  width: 37rem;
+  border-radius: 1rem;
+}
+
+.contact h2 {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  z-index: 10;
+  color: var(--light-color);
+}
+
+.contact a {
+  color: var(--light-color);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.1rem;
+  gap: var(--gap)
+}
+
+.contact a i {
+  font-size: var(--font-size-sm);
+}
+
+.contact a:hover {
+  color: #a767e5;
+  text-decoration: underline;
+}
+
 /* ===== Sensei Shop =====*/
 
+.sensei-shop {
+  background: var(--secondary-background-color);
+}
+
 .sensei-shop .container {
-  padding: 5rem 2.5rem 0rem 2.5rem;
+  padding: 7.5rem 2.5rem 10rem 2.5rem;
 
 }
 
@@ -808,6 +842,7 @@ i.user-icon-small-screens {
   grid-row: span 2;
 }
 
+
 /* Sponsorship Banner */
 
 .sponsorships-container .container {
@@ -825,10 +860,13 @@ i.user-icon-small-screens {
 .sponsor-content a {  
   width: 20rem;
 }
+
 .sponsor-content a:hover {
   color: var(--light-color);
   transform: scale(1.1);
 }
+
+
 
 /* ===== Footer ===== */
 
@@ -976,10 +1014,21 @@ i.user-icon-small-screens {
     padding-right: 0;
   }
 
-  .esports-teams-container {
+  .esports-teams-container,
+  .contact-list {
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
   }
+
+  .contact  {
+    width: 100%;
+  }
+
+  .contact img {
+    width: 45rem;
+  }
+
+
 
   .sponsor-content {
     gap: 2.5rem;
@@ -1204,7 +1253,9 @@ i.user-icon-small-screens {
     gap: 0.5rem;
   }
 
-  .esports-teams .container {
+  .esports-teams .container,
+  #contact-page .container,
+  .sensei-shop .container {
     padding: 0 1rem;
   }
 
@@ -1212,16 +1263,10 @@ i.user-icon-small-screens {
     padding-left: 0;
   }
 
-  .esports-teams-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
+  .esports-teams-container,
+  .contact-list,
   .sensei-shop-container {
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .sensei-shop .container {
-    padding: 0 1rem;
   }
 
   .sponsorships-container .container {
