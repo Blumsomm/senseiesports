@@ -238,6 +238,19 @@ i.user-icon-small-screens {
   cursor: pointer;
 }
 
+.user-icons {
+  display: flex;
+}
+
+.user-icon-large-screens {
+  color: var(--light-color);
+  font-size: 2rem;
+}
+
+#cart-icon {
+  font-size: var(--font-size-md);
+}
+
 .user-btn {
   display: flex;
   justify-content: flex-end;
@@ -289,6 +302,10 @@ i.user-icon-small-screens {
 
 .user-panel .fa-arrow-down {
   font-size: var(--font-size-sm);
+}
+
+.user-icons {
+  gap: var(--gap);
 }
 
 /* ===== Dropdown Menu ===== */

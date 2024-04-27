@@ -1,0 +1,265 @@
+/* === Google Fonts === */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Custom Properties */
+:root{
+    --light-color: #fff;
+    --light-color-alt: #afb6cd;
+    --primary-background-color: #373252;
+    --secondary-background-color: #151120;
+    --hover-purple-color: #5c428c;
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(
+        115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(255,255,255,.05);
+    --transparent-dark-color: rgba(0,0,0,.75);
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xsm: 1.2rem;
+    --font-size-sm: 1.6rem;
+    --font-size-md: 2.4rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 4rem;
+    --gap: 2rem;
+    --margin-sm: 2rem;
+    --margin-md: 3rem;
+    --item-min-height-sm: 20rem;
+    --item-min-height-md: 30rem;
+    --num-cols: 4;
+    --row-height: 20rem;
+}
+
+
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--light-color);
+  background-color: var(--primary-background-color);
+  letter-spacing: 1px;
+  transition: background-color .25s,color .25s;
+  overflow: auto;
+}
+
+.company-title {
+  font-size: var(--font-size-xl);
+  text-transform: uppercase;
+  margin: 7.5rem 0 2.5rem 0;
+  color: var(--light-color)
+}
+
+.introduction {
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  color: var(--light-color)
+}
+
+.history-title {
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
+  padding: 2.5rem 0;
+  color: var(--light-color);
+}
+
+.history-content {
+  padding-bottom: 1.5rem;
+  letter-spacing: 1.5px;
+  color: var(--light-color)
+}
+
+.gigacon-img {
+  height: 400px;
+  width: 60%;
+  float: right;
+  margin: 2rem 0 2rem 3rem;
+}
+
+.owner-title {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+  color: var(--light-color);
+}
+
+/* Achievements */
+
+.overall-achievements {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 7.5rem 0;
+  height: auto;
+  gap: 5rem;
+}
+
+.event-attended {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  text-transform: uppercase;
+}
+
+.event-type {
+  font-size: var(--font-size-sm);
+}
+
+.event-total {
+  font-size: var(--font-size-lg);
+  color: var(--light-color)
+}
+
+.achievements-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--light-color-alt);
+  padding: 5rem 0 2.5rem 0;
+}
+
+.team-achievement {
+  display: grid;
+  grid-template-columns: minmax(0, 160px) minmax(0, 250px) auto auto;
+  gap: 5rem;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  background: var(--transparent-light-color);
+  padding: 2rem;
+  align-items: center;
+  /* border: solid var(--light-color-alt); */
+  /* border-width: 0.1rem 0.1rem 0 0.1rem; */
+}
+
+.organisation-achievements {
+  grid-template-columns: minmax(0, 160px) minmax(0, 450px) auto;
+  text-align: center;
+}
+
+.team-achievement:hover {
+  background-color: var(--transparent-dark-color);
+  color: var(--light-color);
+}
+
+.achievement-placement {
+  display: flex;
+  gap: 1rem;
+  text-transform: capitalize;
+  justify-content: center;
+}
+
+.achievement-icon-first {
+  color: rgba(255, 217, 0, 0.75);
+  font-size: var(--font-size-md);
+}
+
+.achievement-icon-second {
+  color: rgba(192, 192, 192, 0.75);
+  font-size: var(--font-size-md);
+}
+
+.achievement-icon-third {
+  color: rgba(255, 87, 51, 0.75);
+  font-size: var(--font-size-md);
+}
+
+.achievement-comp-date-small-screens,
+.team-competition-mobile,
+.team-upcoming-date-time-mobile,
+.latest-date-mobile {
+  display: none;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1024px) {
+  /* .team-title h2 {
+    font-size: var(--font-size-lg);
+    padding-left: 1.25rem;
+  } */
+  .esports-teams .container {
+    margin: 0 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .gigacon-img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+  }
+
+  .overall-achievements {
+    justify-content: space-evenly;
+    gap: 5rem;
+  }  
+
+  .team-achievement{
+    font-size: var(--font-size-xsm);
+  }
+
+  .team-achievement h3 {
+    font-size: var(--font-size-xsm);
+  }
+
+  .achievement-placement i {
+    font-size: 2.2rem;
+  } 
+}
+
+@media (max-width: 425px) {
+  .achievement-competition,
+  .achievement-date {
+    display: none;
+  }
+
+  .company-title,
+  .introduction-container {
+    text-align: center;
+  }
+
+  .achievements-title {
+    text-align: center;
+  }
+
+  .team-achievement {
+    grid-template-columns: minmax(0, 40px) minmax(0, 250px);
+    gap: 4rem;
+  }
+
+  .achievement-comp-date-small-screens {
+    display: block;
+    text-align: center;
+  }
+  
+  
+
+}
+
+@media (max-width: 320px) {
+
+  .achievements-title {
+    font-size: var(--font-size-md);
+    padding-top: 2.5rem;
+  }
+}
